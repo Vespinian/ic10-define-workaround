@@ -9,7 +9,7 @@
       It requires Bepinex to be installed with the StationeersLaunchPad plugin.
       See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
 
-      This mod should make defines work with all the l/s/get/put operations again.
+      This mod should make using defines as refids work with all the l/s/get/put operations again.
       This is with the caveat that defines must be written before being used and that there is limited testing that I could do.
 
       Programs like this should now be working!
@@ -49,7 +49,7 @@ This is a Plugin Mod.
 It requires Bepinex to be installed with the StationeersLaunchPad plugin.
 See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
 
-Makes defines work with all the l/s/get/put operations again.
+This mod should make using defines as refids work with all the l/s/get/put operations again.
 This is with the caveat that defines must be written before being used.
 
 Programs like this should now be working!
