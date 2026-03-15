@@ -12,7 +12,7 @@
       This mod should make defines work with all the l/s/get/put operations again.
       This is with the caveat that defines must be written before being used and that there is limited testing that I could do.
 
-      This code should now be working!
+      Programs like this should now be working!
 
       define test $D52
 
@@ -43,26 +43,25 @@
   <LoadBefore />
   <LoadAfter />
   <InGameDescription>
-      <![CDATA[<size="30"><color=#ffa500> Write Trade Data Extended </color></size>
-          This is a Plugin Mod.
-          It requires Bepinex to be installed with the StationeersLaunchPad plugin.
-          See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
+      <![CDATA[<size="30"><color=#ffa500> IC10 Define Workaround </color></size>
+This is a Plugin Mod.
+It requires Bepinex to be installed with the StationeersLaunchPad plugin.
+See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
 
-          Makes defines work with all the l/s/get/put operations again.
-          This is with the caveat that defines must be written before being used.
+Makes defines work with all the l/s/get/put operations again.
+This is with the caveat that defines must be written before being used.
 
-          This code should now be working!
+Programs like this should now be working!
 
-          define test $D52
+define test $D52
+Main:
+yield
+l r0 test On
+seqz r0 r0
+s test On r0
+j Main
 
-          Main:
-          yield
-          l r0 test On
-          seqz r0 r0
-          s test On r0
-          j Main
-
-          repo: https://github.com/Vespinian/ic10-define-workaround
+repo: https://github.com/Vespinian/ic10-define-workaround
           ]]>
   </InGameDescription>
 </ModMetadata>

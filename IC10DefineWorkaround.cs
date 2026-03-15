@@ -3,7 +3,6 @@ using System.Reflection;
 using HarmonyLib;
 using StationeersMods.Interface;
 using Assets.Scripts.Objects.Electrical;
-using System.Text.RegularExpressions;
 
 namespace IC10DefineWorkaround
 {
