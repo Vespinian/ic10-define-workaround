@@ -5,21 +5,25 @@
   <Version>1.0</Version>
   <!-- Steam description using steam styling tags for Steam workshop page -->
   <Description>
-    This is a Plugin Mod.
-    It requires Bepinex to be installed with the StationeersLaunchPad plugin.
-    See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
+      This is a Plugin Mod.
+      It requires Bepinex to be installed with the StationeersLaunchPad plugin.
+      See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
 
-    Defines that start with an underscore can now be used in l or s instruction.
-    For example this works:
+      This mod should make defines work with all the l/s/get/put operations again.
+      This is with the caveat that defines must be written before being used and that there is limited testing that I could do.
 
-      define _test $D52
+      This code should now be working!
+
+      define test $D52
 
       Main:
       yield
-      l r0 _test On
+      l r0 test On
       seqz r0 r0
-      s _test On r0
+      s test On r0
       j Main
+
+      repo: https://github.com/Vespinian/ic10-define-workaround
   </Description>
   <!-- Ingame Description using TMP tags for Workshop menu -->
   <!-- All contents of ChangeLog should be changed for each publication for Steam workshop page -->
@@ -39,22 +43,26 @@
   <LoadBefore />
   <LoadAfter />
   <InGameDescription>
-    <![CDATA[<size="30"><color=#ffa500> Write Trade Data Extended </color></size>
-This is a Plugin Mod.
-It requires Bepinex to be installed with the StationeersLaunchPad plugin.
-See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
+      <![CDATA[<size="30"><color=#ffa500> Write Trade Data Extended </color></size>
+          This is a Plugin Mod.
+          It requires Bepinex to be installed with the StationeersLaunchPad plugin.
+          See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
 
-Defines that start with an underscore can now be used in l or s instruction.
-For example this works:
+          Makes defines work with all the l/s/get/put operations again.
+          This is with the caveat that defines must be written before being used.
 
-  define _test $D52
+          This code should now be working!
 
-  Main:
-  yield
-  l r0 _test On
-  seqz r0 r0
-  s _test On r0
-  j Main
-]]>
+          define test $D52
+
+          Main:
+          yield
+          l r0 test On
+          seqz r0 r0
+          s test On r0
+          j Main
+
+          repo: https://github.com/Vespinian/ic10-define-workaround
+          ]]>
   </InGameDescription>
 </ModMetadata>
