@@ -33,6 +33,7 @@
     [*]Initial release
     [/list]
   </ChangeLog>
+<WorkshopHandle>3685284173</WorkshopHandle>
   <!-- StationeersMods and BepInEx tags for Steam workshop page will be automatically added by the framework when publishing -->
   <Tags>
     <Tag>StationeersLaunchPad</Tag>
